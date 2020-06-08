@@ -379,3 +379,79 @@ template {
   display: none;
 }
 
+body {
+  color: #58402c;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background-color: #30488f;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border: 0;
+}
+
+button:hover {
+  outline: 0;
+}
+
+header {
+  height: 70px;
+}
+
+header .container {
+  border-bottom: 1px solid #58402c;
+}
+
+header #logo {
+  float: left;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header nav {
+  float: right;
+  width: 70%;
+  height: 100%;
+  text-align: right;
+  font-size: 14px;
+}
+
+header nav ul {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-left: 30px;
+  display: inline-block;
+}
+

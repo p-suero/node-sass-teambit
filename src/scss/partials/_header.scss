@@ -1,0 +1,31 @@
+header {
+    height: 70px;
+
+    .container {
+        border-bottom: 1px solid $default_color;
+    }
+
+    #logo {
+        @include float_element(left, 30%);
+        @include flex(row, flex-start, center);
+    }
+
+    nav {
+        @include float_element(right, 70%);
+        text-align: right;
+        font-size: $nav_font_size;
+
+        ul {
+            margin: 0;
+            height: 100%;
+            @include flex(row, flex-end, center);
+            list-style-type: none;
+
+            li {
+                margin-left: 30px;
+                display: inline-block;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,12 @@
+@mixin float_element($float, $width_container) {
+    float: $float;
+    width: $width_container;
+    height: 100%;
+}
+
+@mixin flex($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
