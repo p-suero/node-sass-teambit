@@ -2,7 +2,7 @@ header {
     height: 70px;
 
     .container {
-        border-bottom: 1px solid $default_color;
+        border-bottom: 1px solid $default_color_border;
     }
 
     #logo {
@@ -26,6 +26,5 @@ header {
                 display: inline-block;
             }
         }
-
     }
 }

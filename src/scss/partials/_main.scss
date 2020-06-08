@@ -1,0 +1,50 @@
+#jumbotron {
+    padding: $jumbotron_padding;
+
+    .container {
+        @include flex(row, space-between, stretch)
+    }
+
+    #jumbotron-text {
+        width: 43%;
+
+        h1 {
+            margin: $margin_titles;
+            line-height: 1.5;
+            font-size: 47px;
+        }
+
+        p {
+            margin: 38px 0;
+            font-size: 20px;
+        }
+
+        .buttons {
+            margin-bottom: 13px;
+
+            button {
+                font-size: 13px;
+                padding: 10px 20px;
+            }
+        }
+
+        .separator {
+            padding: 0 15px;
+            opacity: 0.5;
+        }
+
+        .other-channel-access {
+            font-size: 14px;
+        }
+    }
+
+    #jumbotron-image {
+        width: 52%;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}

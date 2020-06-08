@@ -379,6 +379,8 @@ template {
   display: none;
 }
 
+/* end normalize */
+
 body {
   color: #58402c;
   font-family: "Lato", sans-serif;
@@ -408,10 +410,12 @@ button {
   padding: 8px;
   border-radius: 8px;
   border: 0;
+  transition: background-color 1s;
 }
 
 button:hover {
   outline: 0;
+  background-color: #233569;
 }
 
 header {
@@ -453,5 +457,60 @@ header nav ul {
 header nav ul li {
   margin-left: 30px;
   display: inline-block;
+}
+
+#jumbotron {
+  padding: 100px 0;
+}
+
+#jumbotron .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#jumbotron #jumbotron-text {
+  width: 43%;
+}
+
+#jumbotron #jumbotron-text h1 {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 47px;
+}
+
+#jumbotron #jumbotron-text p {
+  margin: 38px 0;
+  font-size: 20px;
+}
+
+#jumbotron #jumbotron-text .buttons {
+  margin-bottom: 13px;
+}
+
+#jumbotron #jumbotron-text .buttons button {
+  font-size: 13px;
+  padding: 10px 20px;
+}
+
+#jumbotron #jumbotron-text .separator {
+  padding: 0 15px;
+  opacity: 0.5;
+}
+
+#jumbotron #jumbotron-text .other-channel-access {
+  font-size: 14px;
+}
+
+#jumbotron #jumbotron-image {
+  width: 52%;
+}
+
+#jumbotron #jumbotron-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
