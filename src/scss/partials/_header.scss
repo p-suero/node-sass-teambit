@@ -28,6 +28,10 @@ header {
             li {
                 margin-left: 30px;
                 display: inline-block;
+
+                a:hover {
+                    color: #30488f;
+                }
             }
         }
     }

@@ -463,6 +463,10 @@ header nav ul li {
   display: inline-block;
 }
 
+header nav ul li a:hover {
+  color: #30488f;
+}
+
 /* JUMBOTRON */
 
 #jumbotron {
@@ -623,11 +627,10 @@ header nav ul li {
 #reviews .section-image img,
 #surveys .section-image img,
 #praise .section-image img {
-  max-width: 650px;
+  width: 630px;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
-  float: right;
 }
 
 #feedback .section-info,
@@ -693,17 +696,17 @@ header nav ul li {
 
 /* SURVEYS */
 
+#surveys .section-image,
+#praise .section-image {
+  text-align: left;
+}
+
 #surveys .section-info,
 #praise .section-info {
   text-align: right;
 }
 
-#surveys .section-image img,
-#praise .section-image img {
-  float: left;
-}
+/* REVIEWS */
 
-/* revievw */
-
-/* praise */
+/* PRAISE */
 

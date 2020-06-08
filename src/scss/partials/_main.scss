@@ -119,10 +119,7 @@
         text-align: right;
 
         img {
-            max-width: 650px;
-            height: auto;
-            object-fit: contain;
-            float: right;
+            @include img_set (630px, auto)
         }
     }
 
@@ -168,21 +165,21 @@
 #surveys {
     @extend #feedback;
 
+    .section-image {
+        text-align: left;
+    }
+
     .section-info {
         text-align: right;
     }
-
-    .section-image img{
-        float: left;
-    }
 }
 
-/* revievw */
+/* REVIEWS */
 #reviews {
     @extend #feedback;
 }
 
-/* praise */
+/* PRAISE */
 #praise {
     @extend #surveys;
 }
