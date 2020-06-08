@@ -7,12 +7,12 @@
         @include flex(row, space-between, stretch);
 
         #jumbotron-text {
-            width: 43%;
+            width: 44%;
 
             h1 {
                 margin: 0;
                 line-height: $title_line_height;
-                font-size: 43px;
+                font-size: 45px;
             }
 
             p {
@@ -24,7 +24,7 @@
                 margin-bottom: 13px;
 
                 button {
-                    font-size: 13px;
+                    font-size: $secondary_font_size;
                     padding: 10px 20px;
                 }
             }
@@ -35,12 +35,12 @@
             }
 
             .other-channel-access {
-                font-size: 13px;
+                font-size: $secondary_font_size;
             }
         }
 
         #jumbotron-image {
-            width: 52%;
+            width: 49%;
 
             img {
                 @include img_set (100%, auto);
@@ -94,7 +94,7 @@
     }
 }
 
-/* offer */
+/* OFFER */
 #offer {
     @extend #representation;
 
@@ -104,6 +104,85 @@
 
     h3 {
         font-size: 23px;
+        margin: 80px 0 0 0;
         margin-top: 80px;
     }
+}
+
+/* FEEDBACK */
+#feedback {
+    padding: $padding_section;
+    @include flex(row,flex-start, stretch);
+
+    .section-image {
+        width: 50%;
+        text-align: right;
+
+        img {
+            max-width: 650px;
+            height: auto;
+            object-fit: contain;
+            float: right;
+        }
+    }
+
+    .section-info {
+        width: 50%;
+        text-align: left;
+
+        .section-info-inner {
+            width: 420px;
+            display: inline-block;
+            margin: 0 30px;
+
+            h2 {
+                font-size: 26px;
+                line-height: $title_line_height;
+            }
+
+            p {
+                font-size: $secondary_paragraphs_font_size;
+                line-height: 1.4;
+            }
+
+            a {
+                color: #30488F;
+                font-size: 20px;
+            }
+
+            .img-info-container {
+                margin-top: 40px;
+                text-align: center;
+                width: 100%;
+
+                img {
+                    @include img_set(270px, auto);;
+                    float: none;
+                }
+            }
+        }
+    }
+}
+
+/* SURVEYS */
+#surveys {
+    @extend #feedback;
+
+    .section-info {
+        text-align: right;
+    }
+
+    .section-image img{
+        float: left;
+    }
+}
+
+/* revievw */
+#reviews {
+    @extend #feedback;
+}
+
+/* praise */
+#praise {
+    @extend #surveys;
 }

@@ -1,5 +1,9 @@
 header {
-    height: 70px;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background-color: $primary_background-color;
 
     .container {
         border-bottom: 1px solid $default_color_border;

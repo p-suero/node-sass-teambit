@@ -387,7 +387,7 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 1080px;
   height: 100%;
   margin: 0 auto;
 }
@@ -407,7 +407,7 @@ button {
   background-color: #30488f;
   color: white;
   cursor: pointer;
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
   border: 0;
   transition: background-color 1s;
@@ -419,7 +419,11 @@ button:hover {
 }
 
 header {
-  height: 70px;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: white;
 }
 
 header .container {
@@ -462,7 +466,7 @@ header nav ul li {
 /* JUMBOTRON */
 
 #jumbotron {
-  padding: 100px 0;
+  padding: 150px 0 125px 0;
 }
 
 #jumbotron .container {
@@ -473,13 +477,13 @@ header nav ul li {
 }
 
 #jumbotron .container #jumbotron-text {
-  width: 43%;
+  width: 44%;
 }
 
 #jumbotron .container #jumbotron-text h1 {
   margin: 0;
   line-height: 1.3;
-  font-size: 43px;
+  font-size: 45px;
 }
 
 #jumbotron .container #jumbotron-text p {
@@ -506,7 +510,7 @@ header nav ul li {
 }
 
 #jumbotron .container #jumbotron-image {
-  width: 52%;
+  width: 49%;
 }
 
 #jumbotron .container #jumbotron-image img {
@@ -527,7 +531,7 @@ header nav ul li {
 #representation .container,
 #offer .container {
   border-bottom: 1px solid #58402c;
-  padding: 55px 0;
+  padding: 60px 0;
 }
 
 #representation .container h2,
@@ -582,7 +586,7 @@ header nav ul li {
   margin-top: 30px;
 }
 
-/* offer */
+/* OFFER */
 
 #offer .container {
   border: 0;
@@ -590,6 +594,116 @@ header nav ul li {
 
 #offer h3 {
   font-size: 23px;
+  margin: 80px 0 0 0;
   margin-top: 80px;
 }
+
+/* FEEDBACK */
+
+#feedback,
+#reviews,
+#surveys,
+#praise {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+#feedback .section-image,
+#reviews .section-image,
+#surveys .section-image,
+#praise .section-image {
+  width: 50%;
+  text-align: right;
+}
+
+#feedback .section-image img,
+#reviews .section-image img,
+#surveys .section-image img,
+#praise .section-image img {
+  max-width: 650px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  float: right;
+}
+
+#feedback .section-info,
+#reviews .section-info,
+#surveys .section-info,
+#praise .section-info {
+  width: 50%;
+  text-align: left;
+}
+
+#feedback .section-info .section-info-inner,
+#reviews .section-info .section-info-inner,
+#surveys .section-info .section-info-inner,
+#praise .section-info .section-info-inner {
+  width: 420px;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+#feedback .section-info .section-info-inner h2,
+#reviews .section-info .section-info-inner h2,
+#surveys .section-info .section-info-inner h2,
+#praise .section-info .section-info-inner h2 {
+  font-size: 26px;
+  line-height: 1.3;
+}
+
+#feedback .section-info .section-info-inner p,
+#reviews .section-info .section-info-inner p,
+#surveys .section-info .section-info-inner p,
+#praise .section-info .section-info-inner p {
+  font-size: 1.375rem;
+  line-height: 1.4;
+}
+
+#feedback .section-info .section-info-inner a,
+#reviews .section-info .section-info-inner a,
+#surveys .section-info .section-info-inner a,
+#praise .section-info .section-info-inner a {
+  color: #30488F;
+  font-size: 20px;
+}
+
+#feedback .section-info .section-info-inner .img-info-container,
+#reviews .section-info .section-info-inner .img-info-container,
+#surveys .section-info .section-info-inner .img-info-container,
+#praise .section-info .section-info-inner .img-info-container {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+#feedback .section-info .section-info-inner .img-info-container img,
+#reviews .section-info .section-info-inner .img-info-container img,
+#surveys .section-info .section-info-inner .img-info-container img,
+#praise .section-info .section-info-inner .img-info-container img {
+  width: 270px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  float: none;
+}
+
+/* SURVEYS */
+
+#surveys .section-info,
+#praise .section-info {
+  text-align: right;
+}
+
+#surveys .section-image img,
+#praise .section-image img {
+  float: left;
+}
+
+/* revievw */
+
+/* praise */
 

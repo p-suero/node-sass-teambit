@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    width: 85%;
+    width: 1080px;
     height: 100%;
     margin: 0 auto;
 }
@@ -24,7 +24,7 @@ button {
     background-color: $background_color_button;
     color: $color_button;
     cursor: pointer;
-    padding: 8px;
+    padding: 10px;
     @include bd_radius(8px);
     border: 0;
     transition: background-color 1s;
