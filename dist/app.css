@@ -459,6 +459,8 @@ header nav ul li {
   display: inline-block;
 }
 
+/* JUMBOTRON */
+
 #jumbotron {
   padding: 100px 0;
 }
@@ -470,47 +472,124 @@ header nav ul li {
   align-items: stretch;
 }
 
-#jumbotron #jumbotron-text {
+#jumbotron .container #jumbotron-text {
   width: 43%;
 }
 
-#jumbotron #jumbotron-text h1 {
+#jumbotron .container #jumbotron-text h1 {
   margin: 0;
-  line-height: 1.5;
-  font-size: 47px;
+  line-height: 1.3;
+  font-size: 43px;
 }
 
-#jumbotron #jumbotron-text p {
+#jumbotron .container #jumbotron-text p {
   margin: 38px 0;
-  font-size: 20px;
+  font-size: 21px;
 }
 
-#jumbotron #jumbotron-text .buttons {
+#jumbotron .container #jumbotron-text .buttons {
   margin-bottom: 13px;
 }
 
-#jumbotron #jumbotron-text .buttons button {
+#jumbotron .container #jumbotron-text .buttons button {
   font-size: 13px;
   padding: 10px 20px;
 }
 
-#jumbotron #jumbotron-text .separator {
+#jumbotron .container #jumbotron-text .separator {
   padding: 0 15px;
   opacity: 0.5;
 }
 
-#jumbotron #jumbotron-text .other-channel-access {
-  font-size: 14px;
+#jumbotron .container #jumbotron-text .other-channel-access {
+  font-size: 13px;
 }
 
-#jumbotron #jumbotron-image {
+#jumbotron .container #jumbotron-image {
   width: 52%;
 }
 
-#jumbotron #jumbotron-image img {
+#jumbotron .container #jumbotron-image img {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+/* REPRESENTATION */
+
+#representation,
+#offer {
+  background-color: #ffe7d2;
+  text-align: center;
+}
+
+#representation .container,
+#offer .container {
+  border-bottom: 1px solid #58402c;
+  padding: 55px 0;
+}
+
+#representation .container h2,
+#offer .container h2 {
+  width: 54%;
+  margin: auto;
+  text-align: center;
+}
+
+#representation .container .box-container,
+#offer .container .box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 60px 110px;
+}
+
+#representation .container .box-container .box,
+#offer .container .box-container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+}
+
+#representation .container .box-container .box img,
+#offer .container .box-container .box img {
+  width: 140px;
+  height: 85px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#representation .container .box-container .box p,
+#offer .container .box-container .box p {
+  text-align: center;
+}
+
+#representation .container .big-image,
+#offer .container .big-image {
+  text-align: center;
+}
+
+#representation .container .big-image img,
+#offer .container .big-image img {
+  width: 280px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 30px;
+}
+
+/* offer */
+
+#offer .container {
+  border: 0;
+}
+
+#offer h3 {
+  font-size: 23px;
+  margin-top: 80px;
 }
 

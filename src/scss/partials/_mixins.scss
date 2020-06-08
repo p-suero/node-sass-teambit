@@ -10,3 +10,13 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin bd_radius ($radius) {
+    border-radius: $radius;
+}
+
+@mixin img_set ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+    object-fit: contain;
+}

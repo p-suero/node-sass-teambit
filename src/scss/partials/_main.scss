@@ -1,50 +1,109 @@
+/* JUMBOTRON */
+
 #jumbotron {
     padding: $jumbotron_padding;
 
     .container {
-        @include flex(row, space-between, stretch)
-    }
+        @include flex(row, space-between, stretch);
 
-    #jumbotron-text {
-        width: 43%;
+        #jumbotron-text {
+            width: 43%;
 
-        h1 {
-            margin: $margin_titles;
-            line-height: 1.5;
-            font-size: 47px;
-        }
+            h1 {
+                margin: 0;
+                line-height: $title_line_height;
+                font-size: 43px;
+            }
 
-        p {
-            margin: 38px 0;
-            font-size: 20px;
-        }
+            p {
+                margin: 38px 0;
+                font-size: $primary_paragraphs_font_size;
+            }
 
-        .buttons {
-            margin-bottom: 13px;
+            .buttons {
+                margin-bottom: 13px;
 
-            button {
+                button {
+                    font-size: 13px;
+                    padding: 10px 20px;
+                }
+            }
+
+            .separator {
+                padding: 0 15px;
+                opacity: 0.5;
+            }
+
+            .other-channel-access {
                 font-size: 13px;
-                padding: 10px 20px;
             }
         }
 
-        .separator {
-            padding: 0 15px;
-            opacity: 0.5;
-        }
+        #jumbotron-image {
+            width: 52%;
 
-        .other-channel-access {
-            font-size: 14px;
+            img {
+                @include img_set (100%, auto);
+            }
         }
     }
+}
 
-    #jumbotron-image {
-        width: 52%;
 
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
+/* REPRESENTATION */
+#representation {
+    background-color: $secondary_background_color;
+    text-align: center;
+
+    .container {
+        border-bottom: 1px solid $default_color_border;
+        padding: $padding_section;
+
+        h2 {
+            width: 54%;
+            margin: auto;
+            text-align: center;
         }
+
+        .box-container {
+            @include flex (row, space-around, stretch);
+            margin: 60px 110px;
+
+            .box {
+                @include flex (column, space-around, center);
+                width: 200px;
+
+                img {
+                    @include img_set(140px, 85px);
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .big-image {
+            text-align: center;
+
+            img {
+                @include img_set(280px, auto);
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+/* offer */
+#offer {
+    @extend #representation;
+
+    .container {
+        border: 0;
+    }
+
+    h3 {
+        font-size: 23px;
+        margin-top: 80px;
     }
 }
