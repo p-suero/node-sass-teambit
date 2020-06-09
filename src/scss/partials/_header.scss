@@ -19,7 +19,7 @@ header {
         text-align: right;
         font-size: $small_font_size;
 
-        ul {
+        & > ul {
             margin: 0;
             height: 100%;
             @include flex(row, flex-end, center);
@@ -32,6 +32,33 @@ header {
                 a:hover {
                     color: $hover_color;
                 }
+            }
+        }
+
+        & > ul li:first-child {
+            position: relative;
+
+            &:hover .dropdown-menu,
+            .dropdown-menu:hover {
+                display: block;
+            }
+        }
+
+        ul.dropdown-menu {
+            position: absolute;
+            top: 100%;
+            display: none;
+            background-color: $primary_background-color;
+            text-align: left;
+            padding: 10px 20px 10px 10px;
+            box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+            @include bd_radius(7px);
+            border: 1px solid $border_color;
+
+            li {
+                margin: 5px 0;
+                line-height: $default_line_height;
+                font-weight: 600;
             }
         }
     }

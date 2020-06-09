@@ -1,5 +1,4 @@
 /* JUMBOTRON */
-
 #jumbotron {
     padding: $jumbotron_padding;
 
@@ -33,7 +32,6 @@
         }
     }
 }
-
 
 /* REPRESENTATION */
 #representation {
@@ -195,7 +193,7 @@
         position: relative;
 
         p {
-            margin:14px 0 25px 0;
+            margin: 14px 0 25px 0;
         }
 
         &::before {
@@ -203,7 +201,6 @@
             background-image: url("img/apici.svg");
             background-size: contain;
             background-repeat: no-repeat;
-            display: inline-block;
             position: absolute;
             width: 37px;
             height: 39px;
