@@ -6730,14 +6730,14 @@ footer .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start;
 }
 footer .container #footer-left {
   width: 33%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: flex-start;
 }
 footer .container #footer-left img {
   width: 50px;
@@ -6762,13 +6762,13 @@ footer #footer-right {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: flex-start;
 }
 footer #footer-right div {
   width: 18%;
 }
 footer #footer-right div h4 {
-  font-size: 18px;
+  font-size: 17px;
   margin: 0 0 15px 0;
 }
 footer #footer-right div ul {

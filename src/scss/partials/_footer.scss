@@ -3,11 +3,11 @@ footer {
     background-color: $primary_background-color;
 
     .container  {
-        @include flex(row, space-between, stretch);
+        @include flex(row, space-between, flex-start);
 
         #footer-left {
             width: 33%;
-            @include flex(row,flex-start, stretch);
+            @include flex(row,flex-start, flex-start);
 
             img {
                 width: 50px;
@@ -36,13 +36,13 @@ footer {
 
     #footer-right {
         width: 66%;
-        @include flex(row,space-between, stretch);
+        @include flex(row,space-between, flex-start);
 
         div {
             width: 18%;
 
             h4 {
-                font-size: $medium_font_size;
+                font-size: $smal_title_font_size;
                 margin: 0 0 15px 0;
             }
 
