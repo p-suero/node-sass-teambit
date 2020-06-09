@@ -121,7 +121,7 @@
         text-align: right;
 
         img {
-            @include img_set (630px, auto)
+            @include img_set (630px, auto);
         }
     }
 
@@ -146,7 +146,7 @@
             }
 
             a {
-                color: #30488F;
+                color: $secondary_color_link;
                 font-size: $medium_font_size;
             }
 
@@ -157,7 +157,6 @@
 
                 img {
                     @include img_set(270px, auto);
-                    float: none;
                 }
             }
         }
