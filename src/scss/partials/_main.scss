@@ -11,7 +11,7 @@
             h1 {
                 margin: 0;
                 line-height: $default_line_height;
-                font-size: $jumbotron-title_font_size;
+                font-size: $main_title_font_size;
                 font-weight: 600;
             }
 
@@ -86,7 +86,7 @@
     .container {
         border: 0;
 
-        .big-image + h2 {
+        .big-image + h3 {
             margin: 80px 0 0 0;
             width: 100%;
         }

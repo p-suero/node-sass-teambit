@@ -6596,7 +6596,7 @@ header nav ul.dropdown-menu li {
 #offer .container {
   border: 0;
 }
-#offer .container .big-image + h2 {
+#offer .container .big-image + h3 {
   margin: 80px 0 0 0;
   width: 100%;
 }
@@ -6767,7 +6767,7 @@ footer #footer-right {
 footer #footer-right div {
   width: 18%;
 }
-footer #footer-right div h3 {
+footer #footer-right div h4 {
   font-size: 18px;
   margin: 0 0 15px 0;
 }
