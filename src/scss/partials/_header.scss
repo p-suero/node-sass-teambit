@@ -6,7 +6,7 @@ header {
     background-color: $primary_background-color;
 
     .container {
-        border-bottom: 1px solid $default_color_border;
+        border-bottom: 1px solid $default_color;
     }
 
     #logo {
@@ -17,7 +17,7 @@ header {
     nav {
         @include float_element(right, 70%);
         text-align: right;
-        font-size: $nav_font_size;
+        font-size: $small_font_size;
 
         ul {
             margin: 0;
@@ -30,7 +30,7 @@ header {
                 display: inline-block;
 
                 a:hover {
-                    color: #30488f;
+                    color: $hover_color;
                 }
             }
         }

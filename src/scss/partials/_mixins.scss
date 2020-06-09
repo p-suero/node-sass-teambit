@@ -16,7 +16,7 @@
 }
 
 @mixin img_set ($width, $heigth) {
-    width: $width;
+    max-width: $width;
     height: $heigth;
     object-fit: contain;
 }
