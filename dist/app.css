@@ -6510,6 +6510,7 @@ header nav ul li a:hover {
   margin: 38px 0;
   font-size: 21px;
   line-height: 1.3;
+  font-weight: 500;
 }
 #jumbotron .container #jumbotron-image {
   width: 49%;
