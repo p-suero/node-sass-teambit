@@ -6392,7 +6392,7 @@ template {
 /* altre variabili */
 body {
   color: #58402c;
-  font-family: "Lato", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -6426,6 +6426,23 @@ button:hover {
   background-color: #233569;
 }
 
+.log-in-button {
+  margin-bottom: 13px;
+}
+.log-in-button button {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.log-in-button .separator {
+  padding: 0 15px;
+  opacity: 0.5;
+}
+
+.other-channel-access {
+  font-size: 14px;
+  display: block;
+}
+
 header {
   height: 60px;
   position: fixed;
@@ -6434,7 +6451,7 @@ header {
   background-color: white;
 }
 header .container {
-  border-bottom: 1px solid #58402c;
+  border-bottom: 1px solid #bdb5af;
 }
 header #logo {
   float: left;
@@ -6485,26 +6502,13 @@ header nav ul li a:hover {
 #jumbotron .container #jumbotron-text h1 {
   margin: 0;
   line-height: 1.3;
-  font-size: 45px;
+  font-size: 40px;
+  font-weight: 600;
 }
 #jumbotron .container #jumbotron-text p {
   margin: 38px 0;
   font-size: 21px;
   line-height: 1.3;
-}
-#jumbotron .container #jumbotron-text .buttons {
-  margin-bottom: 13px;
-}
-#jumbotron .container #jumbotron-text .buttons button {
-  font-size: 14px;
-  padding: 10px 20px;
-}
-#jumbotron .container #jumbotron-text .separator {
-  padding: 0 15px;
-  opacity: 0.5;
-}
-#jumbotron .container #jumbotron-text .other-channel-access {
-  font-size: 14px;
 }
 #jumbotron .container #jumbotron-image {
   width: 49%;
@@ -6522,7 +6526,7 @@ header nav ul li a:hover {
   text-align: center;
 }
 #representation .container, #offer .container {
-  border-bottom: 1px solid #58402c;
+  border-bottom: 1px solid #bdb5af;
   padding: 60px 0;
 }
 #representation .container h2:first-child, #offer .container h2:first-child {
@@ -6539,7 +6543,7 @@ header nav ul li a:hover {
   margin: 60px 110px;
 }
 #representation .container .box-container .box, #offer .container .box-container .box {
-  width: 200px;
+  width: 220px;
 }
 #representation .container .box-container .box img, #offer .container .box-container .box img {
   max-width: 140px;
@@ -6554,7 +6558,7 @@ header nav ul li a:hover {
 }
 #representation .container .big-image, #offer .container .big-image {
   text-align: center;
-  margin-top: 100px;
+  margin: 80px 0;
 }
 #representation .container .big-image img, #offer .container .big-image img {
   max-width: 280px;
@@ -6613,7 +6617,7 @@ header nav ul li a:hover {
   font-size: 18px;
 }
 #feedback .section-info .section-info-inner .img-info-container, #reviews .section-info .section-info-inner .img-info-container, #surveys .section-info .section-info-inner .img-info-container, #praise .section-info .section-info-inner .img-info-container {
-  margin-top: 40px;
+  margin-top: 60px;
   text-align: center;
   width: 100%;
 }
@@ -6634,3 +6638,62 @@ header nav ul li a:hover {
 
 /* REVIEWS */
 /* PRAISE */
+/* TEAM-MESSAGE */
+#team-message {
+  padding: 60px 0;
+  background-color: #ffe7d2;
+}
+#team-message h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+#team-message .text-area {
+  max-width: 580px;
+  height: auto;
+  margin: 45px auto;
+  padding: 25px;
+  border-radius: 7px;
+  border: 1px solid #bdb5af;
+  background-color: white;
+  line-height: 1.3;
+  font-size: 16px;
+  position: relative;
+}
+#team-message .text-area p {
+  margin: 14px 0 25px 0;
+}
+#team-message .text-area::before {
+  content: "";
+  background-image: url("img/apici.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  width: 37px;
+  height: 39px;
+  top: -19.5px;
+  left: 0;
+}
+#team-message .text-area .authors {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#team-message .text-area .authors .img-container img {
+  max-width: 40px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 8px;
+}
+#team-message .text-area .authors p {
+  margin: 0;
+  font-size: 14px;
+  color: #30488F;
+}
+#team-message .log-in-button, #team-message .other-channel-access {
+  text-align: center;
+}

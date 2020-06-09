@@ -13,30 +13,13 @@
                 margin: 0;
                 line-height: $default_line_height;
                 font-size: $primary_title_font_size;
+                font-weight: 600;
             }
 
             p {
                 margin: 38px 0;
                 font-size: $big_font_size;
                 line-height: $default_line_height;
-            }
-
-            .buttons {
-                margin-bottom: 13px;
-
-                button {
-                    font-size: $small_font_size;
-                    padding: 10px 20px;
-                }
-            }
-
-            .separator {
-                padding: 0 15px;
-                opacity: 0.5;
-            }
-
-            .other-channel-access {
-                font-size: $small_font_size;
             }
         }
 
@@ -57,7 +40,7 @@
     text-align: center;
 
     .container {
-        border-bottom: 1px solid $default_color;
+        border-bottom: 1px solid $border_color;
         padding: $padding_section;
 
         h2:first-child {
@@ -72,7 +55,7 @@
             margin: 60px  110px;
 
             .box {
-                width: 200px;
+                width: 220px;
 
                 img {
                     @include img_set(140px, auto);
@@ -88,7 +71,7 @@
 
         .big-image {
             text-align: center;
-            margin-top: 100px;
+            margin: 80px 0;
 
             img {
                 @include img_set(280px, auto);
@@ -146,12 +129,12 @@
             }
 
             a {
-                color: $secondary_color_link;
+                color: $special_color;
                 font-size: $medium_font_size;
             }
 
             .img-info-container {
-                margin-top: 40px;
+                margin-top: 60px;
                 text-align: center;
                 width: 100%;
 
@@ -184,4 +167,66 @@
 /* PRAISE */
 #praise {
     @extend #surveys;
+}
+
+/* TEAM-MESSAGE */
+#team-message {
+    padding: $padding_section;
+    background-color: $secondary_background_color;
+
+    h2 {
+        text-align: center;
+        font-size: $primary_title_font_size;
+        line-height: $default_line_height;
+        font-weight: 500;
+    }
+
+    .text-area {
+        max-width: 580px;
+        height: auto;
+        margin: 45px auto;
+        padding: 25px;
+        @include bd_radius(7px);
+        border: 1px solid $border-color;
+        background-color: $primary_background-color;
+        line-height: $default_line_height;
+        font-size: $message-font-size;
+        position: relative;
+
+        p {
+            margin:14px 0 25px 0;
+        }
+
+        &::before {
+            content: "";
+            background-image: url("img/apici.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: inline-block;
+            position: absolute;
+            width: 37px;
+            height: 39px;
+            top: -19.5px;
+            left: 0;
+        }
+
+        .authors {
+            @include flex(row, flex-start, center);
+
+            .img-container img {
+                @include img_set(40px,auto);
+                margin-right: 8px;
+            }
+
+            p {
+                margin: 0;
+                font-size: $small_font_size;
+                color: $special_color;
+            }
+        }
+    }
+
+    .log-in-button, .other-channel-access {
+        text-align: center;
+    }
 }

@@ -34,3 +34,23 @@ button {
         background-color: #233569;
     }
 }
+
+.log-in-button {
+    margin-bottom: 13px;
+
+    button {
+        font-size: $small_font_size;
+        padding: 10px 20px;
+    }
+
+    .separator {
+        padding: 0 15px;
+        opacity: 0.5;
+    }
+
+}
+
+.other-channel-access {
+    font-size: $small_font_size;
+    display: block;
+}
