@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    width: 1080px;
+    width: 1150px;
     height: 100%;
     margin: 0 auto;
 }
@@ -20,6 +20,7 @@ a {
     text-decoration: none;
 }
 
+/* stilo i button di default */
 button {
     background-color: $background_color_button;
     color: $color_button;
@@ -35,22 +36,25 @@ button {
     }
 }
 
-.log-in-button {
-    margin-bottom: 13px;
+/* stilo il log-in (ripetuto più volte in pagina)*/
+.log-in {
+    .buttons {
+        margin-bottom: 30px;
 
-    button {
+        button {
+            font-size: $small_font_size;
+            padding: 10px 20px;
+        }
+
+        .separator {
+            padding: 0 15px;
+            opacity: 0.5;
+        }
+    }
+
+    .other-channel-access {
         font-size: $small_font_size;
-        padding: 10px 20px;
+        display: block;
     }
 
-    .separator {
-        padding: 0 15px;
-        opacity: 0.5;
-    }
-
-}
-
-.other-channel-access {
-    font-size: $small_font_size;
-    display: block;
 }

@@ -1,7 +1,7 @@
 /* JUMBOTRON */
 
 #jumbotron {
-    padding: 150px 0 125px 0;
+    padding: $jumbotron_padding;
 
     .container {
         @include flex(row, space-between, stretch);
@@ -226,7 +226,7 @@
         }
     }
 
-    .log-in-button, .other-channel-access {
+    .log-in {
         text-align: center;
     }
 }

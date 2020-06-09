@@ -6396,7 +6396,7 @@ body {
 }
 
 .container {
-  width: 1080px;
+  width: 1150px;
   height: 100%;
   margin: 0 auto;
 }
@@ -6412,6 +6412,7 @@ a {
   text-decoration: none;
 }
 
+/* stilo i button di default */
 button {
   background-color: #30488f;
   color: white;
@@ -6426,19 +6427,19 @@ button:hover {
   background-color: #233569;
 }
 
-.log-in-button {
-  margin-bottom: 13px;
+/* stilo il log-in (ripetuto più volte in pagina)*/
+.log-in .buttons {
+  margin-bottom: 30px;
 }
-.log-in-button button {
+.log-in .buttons button {
   font-size: 14px;
   padding: 10px 20px;
 }
-.log-in-button .separator {
+.log-in .buttons .separator {
   padding: 0 15px;
   opacity: 0.5;
 }
-
-.other-channel-access {
+.log-in .other-channel-access {
   font-size: 14px;
   display: block;
 }
@@ -6694,6 +6695,68 @@ header nav ul li a:hover {
   font-size: 14px;
   color: #30488F;
 }
-#team-message .log-in-button, #team-message .other-channel-access {
+#team-message .log-in {
   text-align: center;
+}
+
+footer {
+  padding: 55px 0;
+  background-color: white;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+footer .container #footer-left {
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+footer .container #footer-left img {
+  width: 50px;
+  height: 50px;
+  margin: 0 18px 0 0;
+}
+footer .container #footer-left p {
+  max-width: 300px;
+  line-height: 1.3;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+}
+footer .container #footer-left p a {
+  color: #30488F;
+}
+footer .container #footer-left p a:hover {
+  text-decoration: underline;
+}
+footer #footer-right {
+  width: 66%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+footer #footer-right div {
+  width: 18%;
+}
+footer #footer-right div h3 {
+  font-size: 18px;
+  margin: 0 0 15px 0;
+}
+footer #footer-right div ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+footer #footer-right div ul li {
+  line-height: 2.4;
+}
+footer #footer-right div ul li a:hover {
+  color: #30488F;
 }

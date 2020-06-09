@@ -1,0 +1,65 @@
+footer {
+    padding: $padding_footer;
+    background-color: $primary_background-color;
+
+    .container  {
+        @include flex(row, space-between, stretch);
+
+        #footer-left {
+            width: 33%;
+            @include flex(row,flex-start, stretch);
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin: 0 18px 0 0;
+
+            }
+
+            p {
+                max-width: 300px;
+                line-height: $default_line_height;
+                font-weight: 600;
+                font-size: $medium_font_size;
+                margin: 0;
+
+                a {
+                    color: $special_color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    #footer-right {
+        width: 66%;
+        @include flex(row,space-between, stretch);
+
+        div {
+            width: 18%;
+
+            h3 {
+                font-size: $medium_font_size;
+                margin: 0 0 15px 0;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                font-size: $small_font_size;
+                font-weight: 500;
+
+                li {
+                    line-height: $footer_line_height;
+
+                    a:hover {
+                        color: $special_color;
+                    }
+                }
+            }
+        }
+    }
+}
